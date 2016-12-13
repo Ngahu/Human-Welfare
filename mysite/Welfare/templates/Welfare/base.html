@@ -244,7 +244,10 @@
                 <ul>
 
                       <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/image-1.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
-                    <img src="images/main-slider/image-1.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <img src="{% static 'Welfare/images/main-slider/image-1.jpg' %}"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+
+
 
                     <div class="tp-caption sfl sfb tp-resizeme"
                     data-x="left" data-hoffset="15"
@@ -303,7 +306,7 @@
                     </li>
 
                       <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/image-2.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
-                    <img src="images/main-slider/image-2.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <img src="{% static 'Welfare/images/main-slider/image-2.jpg' %}"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                     <div class="tp-caption sfl sfb tp-resizeme"
                     data-x="left" data-hoffset="600"
@@ -344,11 +347,10 @@
                     data-endspeed="1200"
                     data-endeasing="Power4.easeIn"><a href="#" class="theme-btn btn-style-two"><span class="fa fa-heart"></span> &ensp; DONATE NOW</a></div>
 
-
                     </li>
 
                     <li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-thumb="images/main-slider/image-1.jpg"  data-saveperformance="off"  data-title="Awesome Title Here">
-                    <img src="images/main-slider/image-1.jpg"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <img src="{% static 'Welfare/images/main-slider/image-1.jpg' %}"  alt=""  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
                     <div class="tp-caption sft sfb tp-resizeme"
                     data-x="center" data-hoffset="0"
@@ -426,7 +428,7 @@
                     	<div class="row clearfix">
                         	<!--Image Column-->
                             <div class="image-column col-md-6 col-sm-6 col-xs-12">
-                            	<figure class="image-box"><img src="images/resource/featured-image-1.jpg" alt=""></figure>
+                            	<figure class="image-box"><img src="{% static 'Welfare/images/resource/featured-image-1.jpg' %}" alt=""></figure>
                             </div>
                             <!--Content Column-->
                             <div class="content-column col-md-6 col-sm-6 col-xs-12">
@@ -445,7 +447,7 @@
                     	<div class="row clearfix">
                         	<!--Image Column-->
                             <div class="image-column col-md-6 col-sm-6 col-xs-12">
-                            	<figure class="image-box"><img src="images/resource/featured-image-1.jpg" alt=""></figure>
+                            	<figure class="image-box"><img src="{% static 'Welfare/images/resource/featured-image-1.jpg' %}" alt=""></figure>
                             </div>
                             <!--Content Column-->
                             <div class="content-column col-md-6 col-sm-6 col-xs-12">
@@ -464,7 +466,7 @@
                     	<div class="row clearfix">
                         	<!--Image Column-->
                             <div class="image-column col-md-6 col-sm-6 col-xs-12">
-                            	<figure class="image-box"><img src="images/resource/featured-image-1.jpg" alt=""></figure>
+                            	<figure class="image-box"><img src="{% static 'Welfare/images/resource/featured-image-1.jpg' %}" alt=""></figure>
                             </div>
                             <!--Content Column-->
                             <div class="content-column col-md-6 col-sm-6 col-xs-12">
@@ -499,7 +501,7 @@
                 <div class="default-cause-box col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box wow fadeIn" data-wow-duration="1500ms" data-wow-delay="0ms">
                     	<div class="image-box">
-                        	<figure class="image"><a href="single-cause.html"><img src="images/resource/featured-image-2.jpg" alt=""></a></figure>
+                        	<figure class="image"><a href="single-cause.html"><img src="{% static 'Welfare/images/resource/featured-image-2.jpg' %}" alt=""></a></figure>
                             <div class="progress-box">
                             	<div class="bar">
                                 	<div class="bar-inner animated-bar" data-percent="60%"><div class="count-text">60%</div></div>
@@ -540,7 +542,7 @@
                 <div class="default-cause-box col-md-4 col-sm-6 col-xs-12">
                 	<div class="inner-box wow fadeIn" data-wow-duration="1500ms" data-wow-delay="600ms">
                     	<div class="image-box">
-                        	<figure class="image"><a href="single-cause.html"><img src="images/resource/featured-image-4.jpg" alt=""></a></figure>
+                        	<figure class="image"><a href="single-cause.html"><img src="{% static 'Welfare/images/resource/featured-image-4.jpg' %}" alt=""></a></figure>
                             <div class="progress-box">
                             	<div class="bar">
                                 	<div class="bar-inner animated-bar" data-percent="86%"><div class="count-text">86%</div></div>
@@ -671,9 +673,10 @@
 
         </div>
     </section>
+    images/background/image-1.jpg
 
       <!--Call To Action-->
-    <section class="call-to-action" style="background-image:url(images/background/image-1.jpg);">
+    <section class="call-to-action" style="background-image:url({% static 'Welfare/images/background/image-1.jpg' %});">
     	<div class="auto-container">
         	<!--Section Title-->
             <div class="sec-title centered">
@@ -701,7 +704,7 @@
                 <!--Image Column-->
                 <div class="image-column col-lg-7 col-md-6 col-sm-12 col-xs-12">
                 	<div class="inner-box">
-                    	<figure class="image"><img src="images/resource/map-image.png" alt=""></figure>
+                    	<figure class="image"><img src="{% static 'Welfare/images/resource/map-image.png' %}" alt=""></figure>
                     </div>
                 </div>
 
